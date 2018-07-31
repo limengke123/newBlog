@@ -77,8 +77,10 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repository: git@gitee.com:limengke/newBlog.git
   # repository: git@gitee.com:limengke/limengke.git
   branch: gh-pages
-  message: 新的开始
+- type: git
+  repository: git@github.com:limengke123/blog.git
+  branch: gh-pages
