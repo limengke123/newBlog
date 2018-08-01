@@ -2,6 +2,7 @@
 title: pic
 date: 2018-08-01 12:10:42
 tags: 图库
+categories: 杂记
 ---
 
 收集一些图片作为文章的插图。
