@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
+title: 哎呀嘿
+subtitle: 小小的博客
+description: 折腾小久的博客,以后就常驻啦
+author: Mark Lee
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /
+url: http://yoursite.com/newBlog/
+# root: /
+root: /newBlog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -81,6 +82,6 @@ deploy:
   repository: git@gitee.com:limengke/newBlog.git
   # repository: git@gitee.com:limengke/limengke.git
   branch: gh-pages
-- type: git
-  repository: git@github.com:limengke123/blog.git
-  branch: gh-pages
+# - type: git
+#   repository: git@github.com:limengke123/blog.git
+#   branch: gh-pages
