@@ -83,10 +83,6 @@ deploy:
   repository: git@gitee.com:limengke/newBlog.git
   # repository: git@gitee.com:limengke/limengke.git
   branch: gh-pages
-- type: git
-  repository: git@gitee.com:limengke/limengke.git
-  # repository: git@gitee.com:limengke/limengke.git
-  branch: master
 # - type: git
 #   repository: git@github.com:limengke123/blog.git
 #   branch: gh-pages
