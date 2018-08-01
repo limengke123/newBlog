@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 哎呀嘿
+title: 三月的米店
 subtitle: 小小的博客
-description: 折腾小久的博客,以后就常驻啦
+description: 折腾小久的博客,在 2018-08-01 终于基本成型啦，以后就常驻啦
 author: Mark Lee
 language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com/newBlog/
+url: http://yoursite.com/newBlog
 # root: /
 root: /newBlog/
 permalink: :year/:month/:day/:title/
@@ -83,6 +83,10 @@ deploy:
   repository: git@gitee.com:limengke/newBlog.git
   # repository: git@gitee.com:limengke/limengke.git
   branch: gh-pages
+- type: git
+  repository: git@gitee.com:limengke/limengke.git
+  # repository: git@gitee.com:limengke/limengke.git
+  branch: master
 # - type: git
 #   repository: git@github.com:limengke123/blog.git
 #   branch: gh-pages
