@@ -2,6 +2,10 @@
 title: test
 date: 2018-08-01 09:12:29
 tags:
+- 前端
+- 测试
+categories:
+- 前端
 ---
 
 这是第一篇文章啦!
