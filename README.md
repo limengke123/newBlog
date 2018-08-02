@@ -1,6 +1,18 @@
 # hexo 博客
 
-用 `hexo` 搭建的博客,确实还是存在一些坑的,以后补全一篇文章吧。
+博客地址(*网速原因，建议选择 gitee 站点*)：
+
+1. [github](https://limengke123.github.io/newBlog/)
+2. [gitee](https://limengke.gitee.io/newblog/)
+
+正在申请 `js.org`二级域名,通过后就能通过 [lmk.js.org](lmk.js.org) 来访问。
+
+博客的仓库地址(*两个仓库是同步更新的*):
+
+1. [github](https://github.com/limengke123/newBlog)
+2. [gitee](https://gitee.com/limengke/newBlog)
+
+---
 
 ## 图库
 
