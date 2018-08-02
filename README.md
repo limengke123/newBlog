@@ -3,7 +3,7 @@
 博客地址(*网速原因，建议选择 gitee 站点*)：
 
 1. [github](https://limengke123.github.io/newBlog/)
-2. [gitee](https://limengke.gitee.io/newblog/)
+2. [gitee](https://limengke.gitee.io)
 
 正在申请 `js.org`二级域名,通过后就能通过 [lmk.js.org](lmk.js.org) 来访问。
 
