@@ -11,6 +11,38 @@ categories: 杂记
 
 <!-- more -->
 
+## 2018/8/3
+
+![Ivan Konstantinovich Aivazovsky – Tower. Shipwrecked](pic/877090454.jpg)
+
+> Ivan Konstantinovich Aivazovsky – Tower. Shipwrecked 1847
+
+---
+
+![Ivan Konstantinovich Aivazovsky – Wave](pic/596444702.jpg)
+
+> Ivan Konstantinovich Aivazovsky – Wave 1889
+
+---
+
+![Ivan Konstantinovich Aivazovsky – Ninth Wave](pic/713080393.jpg)
+
+> Ivan Konstantinovich Aivazovsky – Ninth Wave 1850
+
+---
+
+![Ivan Konstantinovich Aivazovsky – Shipwreck](pic/456066894.jpg)
+
+> Ivan Konstantinovich Aivazovsky – Shipwreck 1864
+
+---
+
+![Ivan Konstantinovich Aivazovsky – Evening In Cairo](pic/2900977792.jpg)
+
+> Ivan Konstantinovich Aivazovsky – Evening In Cairo 1870
+
+---
+
 ## 2018/8/2
 
 ![Johannes Vermeer – Girl with a Pearl Earring](pic/3526.jpg)
