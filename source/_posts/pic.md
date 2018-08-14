@@ -11,6 +11,12 @@ categories: 杂记
 
 <!-- more -->
 
+## 2018/8/14
+
+![Vincent van Gogh – Blossoming Almond Branch in a Glass with a Book](pic/433381594.jpg)
+
+> Vincent van Gogh – Blossoming Almond Branch in a Glass with a Book 1888
+
 ## 2018/8/3
 
 ![Ivan Konstantinovich Aivazovsky – Tower. Shipwrecked](pic/877090454.jpg)
