@@ -166,6 +166,10 @@ const m2 = next => action => {
 chain = [m1, m2]
 ```
 
-结合之前提到的 `compose` 组合函数，所以这行代码变形成这样：`dispatch = m1(m2(store.dispatch))`。这个时候假设需要`dispatch` 一个 `anAction` ，就会变成这样 `m1(m2(store.dispatch))(anAction)`。对于m1而言，`m2(store.dispatch)` 就是他的 `next` 参数，当 `m1` 执行到 `next(action)`的时候，相当于这时候调用了`m2(store.dispatch)(action)`, 然后进入到`m2`中间件的逻辑，此时`m2`中间件接受的 `next` 正是原本的 `store.dispatch`，运行到`m2` 内部的 `next(action)` 的时候，这时候才去真正的用`store.dispatch` 去处理这个 `action`。
+结合之前提到的 `compose` 组合函数，所以这行代码变形成这样：`dispatch = m1(m2(store.dispatch))`。这个时候假设需要`dispatch` 一个 `anAction` ，就会变成这样 `m1(m2(store.dispatch))(anAction)`。对于m1而言，`m2(store.dispatch)` 就是他的 `next` 参数，当 `m1` 执行到 `next(action)`的时候，相当于这时候调用了`m2(store.dispatch)(action)`, 然后进入到`m2`中间件的逻辑，此时`m2`中间件接受的 `next` 正是原本的 `store.dispatch`，运行到`m2` 内部的 `next(action)` 的时候，这时候才去真正的用`store.dispatch` 去处理这个 `action`。每一次调用 `next` 就把这个中间件的控制权交给下一个中间件。
 
 这就有种俄罗斯套娃一样，一层一层地嵌套，`action` 经过多层的处理，最终到达最里层的才真正地被`dispatch` 。
+
+## 总结
+
+`applyMiddleware` 最为核心就是 `dispatch = compose(...chain)(store.dispatch)`，由此我想到了 `koa` 中间件的机制，有所相似，实现也不太一样。
