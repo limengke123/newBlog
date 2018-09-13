@@ -364,4 +364,45 @@ export function getBrowserMedia(state) {
 
 ```
 
-具体关注下用了 `reselect` 之后，`mapStateToProps` 和我之前的写法发生了变化，正如给的例子那样用 `createSelector` 包了一层，同时传入两个参数进去，第一个参数是个从 `state` 上取值的函数，就像上面的 `getBrowserMedia` 这个例子一样。
+具体关注下用了 `reselect` 之后，`mapStateToProps` 和我之前的写法发生了变化，正如给的例子那样用 `createSelector` 包了一层，同时传入两个参数进去，第一个参数是个从 `state` 上取值的函数，就像上面的 `getBrowserMedia` 这个例子一样。至于 `mapDispatchToProps` 的写法，在我的用法是写一个接受 `dispatch` 的函数同时返回一个对象，当然也可以像上面一样传入一个对象，这个对象 `redux` 就默认做为 `action`。
+
+### props 验证
+
+上面介绍了那么多 `redux` 相关写法，`redux` 确实算是 `react` 学习上的一个难点，现在讲点轻松点的。`redux` 推崇**容器组件**和**展示组件**，实际上在写 `react` 应用的时候，你也可能不太会注意到，其实用 `connect` 这个高阶函数包装过的组件就是所谓的**容器组件**，而传给 `connect` 的组件，其实就是我们写的**展示组件**，写的多了就会发现哈，我们越来越少地用到了组件内部的 `state` 去控制组件，反而大部分情况都是直接用 `props` 去控制组件，这也得益于 `redux` 能够提供类似全局变量 `store` 的取值和改变值的方式。所以说回来，对于一个 `react` 组件而言，`state` 对应内部状态，`props` 对应外部传入值，`props` 由于 `redux` 等状态管理库盛行，使用频率也大幅增加，所以我们需要严格要求好外部传入的 `props`的类型要符合组件规定的。`prop-types` 就是解决这个问题的，当然你也可以不去校验 `props` 的类型。
+
+```js
+import React from 'react'
+export default class Test extends React.Component {
+    static propTypes = {
+        compactLayout: PropTypes.bool,
+        displayLoadingIndicator: PropTypes.bool.isRequired,
+        isMediaLarge: PropTypes.bool.isRequired,
+        isPlaying: PropTypes.bool.isRequired,
+        loadNextTracks: PropTypes.func.isRequired,
+        pause: PropTypes.func.isRequired,
+        pauseInfiniteScroll: PropTypes.bool.isRequired,
+        play: PropTypes.func.isRequired,
+        selectTrack: PropTypes.func.isRequired,
+        selectedTrackId: PropTypes.number,
+        tracklistId: PropTypes.string.isRequired,
+        tracks: PropTypes.instanceOf(List).isRequired
+    };
+    static defaultProps = {
+        compactLayout: true
+    }
+    render () {
+        return xxx
+    }
+}
+
+```
+
+## 总结
+
+`react` 本身不难，甚至我觉得比起 `vue` 而言更为简单，使用难点主要还是在于一些第三方库的搭配使用，所以本文也是基于这个点，记录下一些 `react` 常见用法，以便日后忘记了可以翻阅。
+
+---
+
+![Olive Trees](react使用指南/1755523965.jpg)
+
+> Vincent van Gogh – Olive Trees  1888
