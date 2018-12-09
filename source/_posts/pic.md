@@ -11,6 +11,13 @@ categories: 杂记
 
 <!-- more -->
 
+## 2018/12/9
+
+![Thatched Cottages in the Sunshine ](pic/2059132621.jpg)
+
+> Vincent van Gogh – Thatched Cottages in the Sunshine 1890
+
+---
 
 ## 2018/12/2
 
