@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "server": "hexo clean && hexo g && hexo s -p 5555",
-    "deploy": "git push github && git push gitee"
+    "deploy": "git add . && git commit -m \"post file\" && git push github && git push gitee"
   },
   "hexo": {
     "version": "3.7.1"

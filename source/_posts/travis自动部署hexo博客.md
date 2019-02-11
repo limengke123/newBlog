@@ -7,9 +7,6 @@ tags:
   - hexo
 categories: 前端
 ---
-
-# travis 自动部署hexo博客
-
 `travis` 部署和我们自己手动 `hexo d`有什么区别呢，最主要的区别就是在于 `travis` 能够提供一个虚拟环境，而我们自己去部署的时候需要本机有 `node` 环境，并且要去安装依赖，有了 `travis` 之后，在没有安装这些环境的机子下，只要 `push` 我们的 `markdown` 文件，`travis` 就会自动下载依赖、打包，推送。
 
 ## 这个流程做了什么事情
@@ -110,3 +107,9 @@ env:
 特别需要注意的地方是 `.travis.yml` 文件的格式一定要正确，我在几个空格的地方用了制表符，结果导致一直失败。这时候观察到 `travis` 的 `requests` 中就能发现到是因为这个 `yml` 文件的格式出现问题。
 
 ![error](travis自动部署hexo博客/error.png)
+
+---
+
+![Wheat Field with Cypresses](travis自动部署hexo博客/320977.jpg)
+
+> Vincent van Gogh – Wheat Field with Cypresses
