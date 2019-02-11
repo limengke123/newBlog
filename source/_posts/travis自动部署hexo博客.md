@@ -13,3 +13,5 @@ categories: 前端
 通过 `Travis` 自动化部署 `hexo` 博客。
 
 ## travis 设置
+
+### token 设置的方式
