@@ -11,3 +11,5 @@ categories: 前端
 # travis自动部署hexo博客
 
 通过 `Travis` 自动化部署 `hexo` 博客。
+
+## travis 设置
