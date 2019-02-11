@@ -16,7 +16,7 @@ after_script:
 # - hexo deploy
   - cd ./public
   - git init
-  - git add.
+  - git add .
   - git commit -m "Travis-CI update docs"
   - git push --force ${GH_REF} master:gh-pages
 env:
