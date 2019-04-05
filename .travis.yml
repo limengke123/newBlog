@@ -7,19 +7,16 @@ install:
 before_script:
 - git config --global user.name "limengke123"
 - git config --global user.email "752140235@qq.com"
-# - sed -i'' "s~git@github.com:limengke123/newBlog.git~https://${REPO_TOKEN}:x-oauth-basic@github.com/limengke123/newBlog.git~" _config.yml
-
 script:
 - hexo clean
 - hexo generate
 after_script:
-# - hexo deploy
-  - cd ./public
-  - git init
-  - git add .
-  - git commit -m "Travis-CI update docs"
-  - git push --force https://${REPO_TOKEN}@${GH_REF} master:gh-pages
+- cd ./public
+- git init
+- git add .
+- git commit -m "Travis-CI update docs"
+- git push --force https://${TOKEN}@${GH_REF} master:gh-pages
 env:
   global:
-  - secure: TWm5m8sMQdNX+oHm0feRrRIcLIbph5IvCxT9+i66sPw2W2Qe4TYZKVpwVYIvxW6r/4LffCUiFR3IrOnPoxGi13n1W6kYAhpsK6YgaTBh38UxRhRM/768pPxA5O6Dt1USWpocSegbjF55828ODRb/nr2uIFDOhWVMZo22x/HdYQYWZM8TNXWccU1ZC08BrLivT/AanEn3NACBkLRT/5uhh2NA9/nv9MVxP+/X65mGBbGu6zolTky7cNxuRplglsx1trdfOUvWEDSPCBO8B2Rx4NB3XwOaDzVn3okY2jBjSz1jb9xiyESDyDmnjlMv9p+5LZkUx8kMWDtH7UY7F/y/az0i/M74gwE7BcZ6vdk+eCBjABkTqb8X/hG33Ttkr21AbM02E0BmDhyl2pim2xsnAGdSIQ4vY8YwgBDKbwe2ZoKZCjEoKvUc1HLboTi4Z52etQXIrKSVxlQR2gL14NwYrPiSdhA4jOKnDTxkuCTb4PFw4NgAfkqxPx9GezEfntaJX06//ZQo4B0v1AQ2RuYfY9k3XHNlwYIfk073MV2R7a2+r83ndYVIVhLP810vFn/ZuPuCR8gICbIZWW+ZsKnms9WTOVIrWxvkL0Ts1dwBov62T0HG7Ndck2AVtnym4wgDxPLXeTTwPg16L+za8lirLNQBs5Vz/h3SdcL9Kefig/w=
   - GH_REF: github.com/limengke123/newBlog.git
+  - secure: WD0McHXQTMCiQpYV9H8FuwMnYZaQZhSmMSXTWoRvzoYtfd5PxwbLwIA9QQL4afCCcczfyrKubszqeVIK/Q/y/jvGAU0UYeNZXoeDsltyV5W7IvirkWmY+IjiYdaN1wfQ5OHYk53Oa6EIcsGcfHqTkywhvd3YeFj6VQ3ZlxTmRmq7dJ+zhnluOF4kDbpk3s9u3Yx4H12xiQJt1IGpAMgQMBcilibfymUOCy1w8sqOaI3XUQC89+QgFxWKgpxzZcWEr9pUEZUVzSoedT0wGS5DQ0Zx8F1xbnkE4oEOudx0pA703Qnsx8k5Cn5MbXXAZ1RVWrDyWmyIlpYpEf/h3LwCU6BbkHyDsj4836pC1pTgFb+KIHSO0Dvub8xfW8t4RRc74dPob55KzpLwaTrMIDon/w3MOuQoJNjINJZmI6UHQkWzfAJbZjoRz77r6MLHG1qoIvXVa9il8+5zBLNQeuUbB363276jelHCeuIQVaxCa9k5bdncmWMsH/p9YJHe2r0M/bdKGIvwDL41jU7whrP7yhz4nmdMRBzj9GMx9TZ64y7U4pEkWxmYR3VlSd0NHpAvGTzan0OhfHczFogC8sB5O8O8uAMxCs96f47RFa6eoxSzaEBe8aaAA4sVZ16womgMQODHOON6Si0Fotci119kRuH8SyOdvOU4gNFg940o2j4=
