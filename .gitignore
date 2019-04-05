@@ -1,5 +1,6 @@
 node_modules
 public
+.idea
 
 # 去除.deploy_git 避免自动部署的时候把整个文件提交上去
 .deploy_git

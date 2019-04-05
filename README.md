@@ -1,5 +1,4 @@
-# hexo 博客
-![icon](https://travis-ci.org/limengke123/newBlog.svg?branch=master)
+# 个人博客  &middot; ![icon](https://travis-ci.org/limengke123/newBlog.svg?branch=master)
 博客地址(*网速原因，建议选择 gitee 站点*)：
 
 1. [github](https://limengke123.github.io/newBlog/)
