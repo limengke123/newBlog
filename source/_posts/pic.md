@@ -11,6 +11,14 @@ categories: 杂记
 
 <!-- more -->
 
+## 2019/4/7
+
+![Self-Portrait with Straw Hat](pic/688658171.jpg)
+
+> Vincent van Gogh – Self-Portrait with Straw Hat
+
+---
+
 ## 2019/2/11
 
 ![Wheat Field with Cypresses](pic/178762172.jpg)
