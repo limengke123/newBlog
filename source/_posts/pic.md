@@ -10,6 +10,13 @@ categories: 杂记
 [图片站点](https://en.gallerix.ru/album/Vincent-Van-Gogh)
 
 <!-- more -->
+## 2019/4/10
+
+![The Good Samaritan (after Delacroix)](pic/505847201.jpg)
+
+> Vincent van Gogh – The Good Samaritan (after Delacroix) 1890
+
+---
 
 ## 2019/4/7
 
