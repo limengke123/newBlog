@@ -36,3 +36,27 @@ export const startServer = (option) => {
 ```
 
 此处的 `b.ts` 需要取到option中的port属性，但是在interface定义的时候是可选的，所以这里直接取值会被编译器提示可能从undefined上取值会报错，如果我们确定这里一定能取到值，可以在属性后面加上 `!` 告诉编译器这里一定不是undefined。
+
+## 全局变量
+
+有时候难免会遇到需要全局变量的时候：
+
+1. 在window上面挂载nim属性：
+
+```typescript
+declare global {
+    interface Window {
+        nim: any
+    }
+}
+export {}
+```
+2. 全局挂载SDK属性：
+
+```typescript
+declare namespace SDK{
+    let NIM: {
+        getInstance: any
+    }
+}
+```
