@@ -60,3 +60,11 @@ declare namespace SDK{
     }
 }
 ```
+
+## 泛型
+
+`T extends U ? X : Y` 可以更精确的控制范型：
+
+```typescript
+declare function f<T extends boolean>(x: T): T extends true ? string : number;
+```
