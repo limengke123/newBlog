@@ -10,6 +10,14 @@ categories: 杂记
 [图片站点](https://en.gallerix.ru/album/Vincent-Van-Gogh)
 
 <!-- more -->
+## 2019/10/10
+
+![View of a River with Rowing Boats](pic/674791342.jpg)
+
+> Vincent van Gogh – View of a River with Rowing Boats
+
+--
+
 ## 2019/4/10
 
 ![The Good Samaritan (after Delacroix)](pic/505847201.jpg)
